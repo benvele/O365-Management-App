@@ -56,6 +56,16 @@ public class menuBar extends JPanel {
         logOutBut.setBounds(1201,0,400,100);
         logOutBut.setBorder(border);
         logOutBut.setBackground(Color.GRAY);
+        logOutBut.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try (PowerShell powerShell = PowerShell.openSession())
+                {
+                    PowerShellResponse response = powerShell.executeCommand("Get-PSSession | Remove-PSSession");
+                    banner1.setText("Not Logged In");
+                }
+            }
+        });
         add(banner1);
         add(logInAZBut);
         add(logInEXBut);
