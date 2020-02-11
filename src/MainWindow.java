@@ -8,7 +8,7 @@ public class MainWindow extends JFrame {
         mainPanel mainWindow = new mainPanel();
         getContentPane().add(mainWindow, "Center");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(1600,800);
+        setSize(1618,842);
         setVisible(true);
     }
 
