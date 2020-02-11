@@ -5,7 +5,11 @@ public class MainWindow extends JFrame {
     public MainWindow ()
     {
         super ("Office 365 Management App");
-        myJPanel
+        mainPanel mainWindow = new mainPanel();
+        getContentPane().add(mainWindow, "Center");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(1600,800);
+        setVisible(true);
     }
 
 }
