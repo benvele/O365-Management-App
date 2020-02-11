@@ -33,6 +33,9 @@ public class menuBar extends JPanel {
                     PowerShellResponse setVariable = powerShell.executeCommand("$tenant = Get-AzureADTenantDetail");
                     PowerShellResponse displayName = powerShell.executeCommand("$tenant.DisplayName");
                     banner1.setText("Logged in to: " + displayName.getCommandOutput());
+                    String newTitle = "Users for " + displayName.getCommandOutput();
+                    String newContent = "Users are displayed Here";
+
                 }
             }
         });
@@ -49,6 +52,8 @@ public class menuBar extends JPanel {
                     PowerShellResponse setVariable = powerShell.executeCommand("$tenant = Get-AzureADTenantDetail");
                     PowerShellResponse displayName = powerShell.executeCommand("$tenant.DisplayName");
                     banner1.setText("Logged in to: " + displayName.getCommandOutput());
+                    String middleTitle = "Users for " + displayName.getCommandOutput();
+                    String middleContent = "Users will go here";
                 }
             }
         });
