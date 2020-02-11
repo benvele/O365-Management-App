@@ -6,9 +6,12 @@ public class mainPanel extends JPanel {
     public mainPanel()
     {
         super();
-        GridLayout grid = new GridLayout(1,1);
-        setLayout(grid);
+        setLayout(null);
         setBackground(Color.darkGray);
+        menuBar top = new menuBar();
+        top.setBounds(0, 0, 1600, 100);
+        add(top);
+
     }
 
 }
