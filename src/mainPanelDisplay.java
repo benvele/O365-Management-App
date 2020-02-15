@@ -1,23 +1,28 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 
 class mainPanelDisplay extends JPanel {
 
-    public mainPanelDisplay(String title, String content)
+    public static JLabel mainContentTitle = new JLabel("Nothing to display yet!");
+    public static JLabel mainContent = new JLabel("Nothing to display yet!");
+    JScrollPane mainScroller = new JScrollPane(mainContent, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+
+    public mainPanelDisplay()
     {
         super();
-        setLayout(null);
+        setLayout(new BorderLayout());
         setBackground(Color.BLACK);
+        Border border = BorderFactory.createLineBorder(Color.DARK_GRAY);
 
-        JLabel mainContentTitle = new JLabel(title);
-        mainContentTitle.setBounds(0,0,1200, 50);
         mainContentTitle.setForeground(Color.WHITE);
-        JLabel mainContent = new JLabel(content);
-        mainContent.setBounds(0,50,1200, 650);
-        mainContent.setForeground(Color.WHITE);
+        mainContentTitle.setBorder(border);
 
-        add(mainContentTitle);
-        add(mainContent);
+        mainContent.setForeground(Color.BLACK);
+
+
+        add(mainContentTitle, "North");
+        add(mainScroller, "Center");
 
     }
 

@@ -9,7 +9,7 @@ public class MainWindow extends JFrame {
     {
         super ("Office 365 Management App");
         PowerShellResponse connect = PowerShell.executeSingleCommand("if ((Get-Module -ListAvailable -Name AzureAD) -and (Get-Module -ListAvailable -Name MSOnline)){ Write-Host 'Module exists'} else {Write-Host 'Module does not exist'}");
-        test mainWindow = new test();
+         mainPanel mainWindow = new mainPanel();
         getContentPane().add(mainWindow, "Center");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(1618,842);

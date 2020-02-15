@@ -2,32 +2,27 @@ import javax.swing.*;
 import java.awt.*;
 
 public class mainPanel extends JPanel {
-    String mainPanelTitle = "Nothing to Display Yet";
-    String mainPanelContent = "Nothing to Display Yet";
-    public mainPanelDisplay middle = new mainPanelDisplay(mainPanelTitle, mainPanelContent);
+
+    public mainPanelDisplay middle = new mainPanelDisplay();
+    public actionsList left = new actionsList();
+    public menuBar top = new menuBar();
+    public JSplitPane centerContent = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, left, middle);
+
+
     public mainPanel()
     {
         super();
-        setLayout(null);
+        setLayout(new BorderLayout());
         setBackground(Color.darkGray);
 
-        menuBar top = new menuBar();
-        top.setBounds(0,0,1600, 100);
-        actionsList left = new actionsList();
-        left.setBounds(0, 100, 400,700);
-        middle.setBounds(400, 100, 1200, 700);
+        centerContent.setDividerSize(0);
+        centerContent.setDividerLocation(150);
 
-        add(top);
-        add(left);
-        add(middle);
+
+        add(top, "North");
+        add(centerContent, "Center");
 
     }
 
-
-    public void refreshMiddle(String newTitle, String newContent)
-    {
-        middle = new mainPanelDisplay(newTitle,newContent);
-        middle.repaint();
-    }
 
 }
