@@ -13,17 +13,17 @@ public class actionsList extends JPanel {
         setBackground(Color.GRAY);
         Border border = BorderFactory.createLineBorder(Color.darkGray);
 
-        JButton action1 = new JButton("Action 1");
+        JButton action1 = new JButton("Single User Password Reset"); //will make user password reset
         action1.setBounds(0, 100,400, 100);
         action1.setBorder(border);
         action1.setBackground(Color.GRAY);
 
-        JButton action2 = new JButton("Action 2");
+        JButton action2 = new JButton("Mass User Password Reset"); //will make mass user password reset
         action2.setBounds(0, 200,400, 100);
         action2.setBorder(border);
         action2.setBackground(Color.GRAY);
 
-        JButton action3 = new JButton("Action 3");
+        JButton action3 = new JButton("Action 3"); //
         action3.setBounds(0, 300,400, 100);
         action3.setBorder(border);
         action3.setBackground(Color.GRAY);

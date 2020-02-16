@@ -11,6 +11,7 @@ import java.io.*;
 public class menuBar extends JPanel {
 
     public JLabel banner1 = new JLabel("Not Logged In", SwingConstants.CENTER);
+    public PowerShell powerShell = PowerShell.openSession(); 
 
     public menuBar()
     {
@@ -35,6 +36,8 @@ public class menuBar extends JPanel {
                     PowerShellResponse setVariable = powerShell.executeCommand("$tenant = Get-AzureADTenantDetail");
                     PowerShellResponse displayName = powerShell.executeCommand("$tenant.DisplayName");
                     PowerShellResponse users = powerShell.executeCommand("Get-AzureADUser | Select DisplayName,UserPrincipalName");
+                    File file = new File("users.txt");
+                    file.createNewFile();
                     FileWriter newWriter = new FileWriter("users.txt");
                     newWriter.write(users.getCommandOutput());
                     newWriter.close();
@@ -53,6 +56,7 @@ public class menuBar extends JPanel {
                     newContent = newContent.concat("</html>");
 
                     mainPanelDisplay.mainContent.setText(newContent);
+                    file.delete();
 
                 } catch (FileNotFoundException ex) {
                     ex.printStackTrace();
@@ -74,6 +78,8 @@ public class menuBar extends JPanel {
                     PowerShellResponse setVariable = powerShell.executeCommand("$tenant = Get-AzureADTenantDetail");
                     PowerShellResponse displayName = powerShell.executeCommand("$tenant.DisplayName");
                     PowerShellResponse licensedUsers = powerShell.executeCommand("Get-MsolUser | Where-Object {$_.isLicensed -eq $True}");
+                    File file = new File("users.txt");
+                    file.createNewFile();
                     FileWriter newWriter = new FileWriter("users.txt");
                     newWriter.write(licensedUsers.getCommandOutput());
                     newWriter.close();
@@ -92,6 +98,7 @@ public class menuBar extends JPanel {
                     reader.close();
                     middleContent = middleContent.concat("</html>");
                     mainPanelDisplay.mainContent.setText(middleContent);
+                    file.delete();
                 } catch (FileNotFoundException ex) {
                     ex.printStackTrace();
                 } catch (IOException ex) {
