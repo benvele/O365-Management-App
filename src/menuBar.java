@@ -117,6 +117,8 @@ public class menuBar extends JPanel {
                 {
                     PowerShellResponse response = powerShell.executeCommand("Get-PSSession | Remove-PSSession");
                     banner1.setText("Not Logged In");
+                    mainPanelDisplay.mainContentTitle.setText("Not Logged In");
+                    mainPanelDisplay.mainContent.setText("Not Logged In");
                 }
             }
         });
