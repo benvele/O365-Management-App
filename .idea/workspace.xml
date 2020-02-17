@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a67e21b1-54f0-4500-a00b-a15d913095a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Office365-Management-App/META-INF/Office365-Management-App.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Office365-Management-App/exchangeLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Office365-Management-App/mainPanelDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Office365-Management-App/mainPanelDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Office365-Management-App/test$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Office365-Management-App/test$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Office365-Management-App/test$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Office365-Management-App/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Office365-Management-App/menuBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Office365-Management-App/menuBar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actionsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actionsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menuBar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +77,7 @@
       <workItem from="1581429341159" duration="780000" />
       <workItem from="1581430255373" duration="3953000" />
       <workItem from="1581437031303" duration="24472000" />
-      <workItem from="1581802406446" duration="6416000" />
+      <workItem from="1581802406446" duration="11198000" />
     </task>
     <servers />
   </component>
@@ -107,26 +101,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="186" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581802882594" />
-    <state width="915" height="282" key="GridCell.Tab.0.bottom" timestamp="1581885827910">
+    <state width="913" height="282" key="GridCell.Tab.0.bottom" timestamp="1581905884097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/-4480.0.1707.933/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1581461561441" />
-    <state width="915" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581885827910" />
-    <state width="915" height="282" key="GridCell.Tab.0.center" timestamp="1581885827909">
+    <state width="913" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581905884097" />
+    <state width="913" height="282" key="GridCell.Tab.0.center" timestamp="1581905884097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/-4480.0.1707.933/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1581461561441" />
-    <state width="915" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581885827909" />
-    <state width="915" height="282" key="GridCell.Tab.0.left" timestamp="1581885827909">
+    <state width="913" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581905884097" />
+    <state width="913" height="282" key="GridCell.Tab.0.left" timestamp="1581905884097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/-4480.0.1707.933/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1581461561441" />
-    <state width="915" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581885827909" />
-    <state width="915" height="282" key="GridCell.Tab.0.right" timestamp="1581885827910">
+    <state width="913" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581905884097" />
+    <state width="913" height="282" key="GridCell.Tab.0.right" timestamp="1581905884097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/-4480.0.1707.933/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1581461561441" />
-    <state width="915" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581885827910" />
+    <state width="913" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581905884097" />
     <state x="-1459" y="163" key="SettingsEditor" timestamp="1581439084032">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -145,6 +139,10 @@
     </state>
     <state x="230" y="99" width="1414" height="715" key="dock-window-1/-4480.0.1707.933/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1581455666790" />
     <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1581805654662" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-2" timestamp="1581902902381">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1581902902381" />
     <state x="-1329" y="65" width="737" height="909" key="find.popup" timestamp="1581429993633">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
