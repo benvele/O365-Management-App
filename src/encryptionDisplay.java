@@ -3,7 +3,7 @@ import java.awt.*;
 
 public class encryptionDisplay extends JPanel {
 
-    public static JButton irmCheck = new JButton("Check IRM Config");
+
 
     public encryptionDisplay()
     {
@@ -11,10 +11,11 @@ public class encryptionDisplay extends JPanel {
 
         setLayout(new BorderLayout());
 
-        irmCheck.setBackground(Color.darkGray);
-        irmCheck.setForeground(Color.WHITE);
+        encryptionMenuBar mainBar = new encryptionMenuBar();
+        encryptionContent mainContent = new encryptionContent();
 
-        add(irmCheck,"North");
+        add(mainBar,"North");
+        add(mainContent, "Center");
     }
 
 }
