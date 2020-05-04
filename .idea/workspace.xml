@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a67e21b1-54f0-4500-a00b-a15d913095a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/encryptionDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/encryptionDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actionsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encryptionContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encryptionDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encryptionMenuBar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encryptionWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartMainPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainPanelDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menuBarOLD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +50,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jPowerShell-3.1.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,6 +87,8 @@
       <workItem from="1581802406446" duration="11198000" />
       <workItem from="1581948954784" duration="2516000" />
       <workItem from="1582141694886" duration="900000" />
+      <workItem from="1588613308427" duration="333000" />
+      <workItem from="1588615191052" duration="2324000" />
     </task>
     <servers />
   </component>
@@ -98,9 +109,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581802691027" />
-    <state x="186" y="261" key="FileChooserDialogImpl" timestamp="1581802882594">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="584" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588615739815">
+      <screen x="0" y="0" width="1707" height="920" />
     </state>
+    <state x="584" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1707.920/-1920.350.1536.824/2560.0.1600.860@0.0.1707.920" timestamp="1588615739815" />
+    <state x="165" y="231" key="FileChooserDialogImpl" timestamp="1588613628579">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="165" y="231" key="FileChooserDialogImpl/0.0.1707.920/-1920.350.1536.824/2560.0.1600.860@0.0.1707.920" timestamp="1588613628579" />
     <state x="186" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581802882594" />
     <state width="1877" height="326" key="GridCell.Tab.0.bottom" timestamp="1582142595699">
       <screen x="-640" y="-1080" width="1920" height="1040" />
@@ -150,21 +166,23 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="163" key="SettingsEditor/-4480.0.1707.933/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1581439084032" />
-    <state x="583" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1582141694414">
+    <state x="583" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1588613308316">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="583" y="305" key="com.intellij.ide.util.TipDialog/-2560.-1088.1920.1020/1280.-1080.1920.1040/-640.-1080.1920.1040/0.0.1707.920@0.0.1707.920" timestamp="1582141694414" />
     <state x="-1264" y="345" key="com.intellij.ide.util.TipDialog/-4480.0.1707.933/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1581437043754" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/-4480.0.1707.933/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581948954751" />
+    <state x="583" y="305" key="com.intellij.ide.util.TipDialog/0.0.1707.920/-1920.350.1536.824/2560.0.1600.860@0.0.1707.920" timestamp="1588613308316" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581802413410" />
     <state x="-1235" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581439075680">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1235" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/-4480.0.1707.933/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1581439075680" />
-    <state x="-7" y="0" width="974" height="1047" key="dock-window-1" timestamp="1581805654662">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2809" y="-15" width="1234" height="905" maximized="true" key="dock-window-1" timestamp="1588616626514">
+      <screen x="2560" y="0" width="1600" height="860" />
     </state>
     <state x="230" y="99" width="1414" height="715" key="dock-window-1/-4480.0.1707.933/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1581455666790" />
+    <state x="2809" y="-15" width="1234" height="905" maximized="true" key="dock-window-1/0.0.1707.920/-1920.350.1536.824/2560.0.1600.860@0.0.1707.920" timestamp="1588616626514" />
     <state x="-7" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1581805654662" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-2" timestamp="1581902902381">
       <screen x="0" y="0" width="1920" height="1040" />
