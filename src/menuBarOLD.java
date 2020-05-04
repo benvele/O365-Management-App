@@ -8,12 +8,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 
-public class menuBar extends JPanel {
+public class menuBarOLD extends JPanel {
 
     public JLabel banner1 = new JLabel("Not Logged In", SwingConstants.CENTER);
     public PowerShell powerShell = PowerShell.openSession(); 
 
-    public menuBar()
+    public menuBarOLD()
     {
 
         super();
@@ -42,7 +42,7 @@ public class menuBar extends JPanel {
                     newWriter.write(users.getCommandOutput());
                     newWriter.close();
                     banner1.setText("Logged in to: " + displayName.getCommandOutput());
-                    mainPanelDisplay.mainContentTitle.setText("Users for " + displayName.getCommandOutput());
+
                     String newContent = "<html>";
 
                     BufferedReader reader = new BufferedReader(new FileReader("users.txt"));
@@ -55,7 +55,7 @@ public class menuBar extends JPanel {
                     reader.close();
                     newContent = newContent.concat("</html>");
 
-                    mainPanelDisplay.mainContent.setText(newContent);
+
                     file.delete();
 
                 } catch (FileNotFoundException ex) {
@@ -97,7 +97,7 @@ public class menuBar extends JPanel {
                     }
                     reader.close();
                     middleContent = middleContent.concat("</html>");
-                    mainPanelDisplay.mainContent.setText(middleContent);
+
                     file.delete();
                 } catch (FileNotFoundException ex) {
                     ex.printStackTrace();
@@ -117,8 +117,7 @@ public class menuBar extends JPanel {
                 {
                     PowerShellResponse response = powerShell.executeCommand("Get-PSSession | Remove-PSSession");
                     banner1.setText("Not Logged In");
-                    mainPanelDisplay.mainContentTitle.setText("Not Logged In");
-                    mainPanelDisplay.mainContent.setText("Not Logged In");
+
                 }
             }
         });
